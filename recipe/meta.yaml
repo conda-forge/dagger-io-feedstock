@@ -1,5 +1,5 @@
 {% set name = "dagger-io" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
-  sha256: 386c14beaab5e83d93328e8e74f78add67e589b2523ecf9707ae6f8d17caa095
+  sha256: b06cea351128ccd0c89df51f5d72eb155a092460ff6aaabf8d970d9587cfb8ba
 
 build:
   noarch: python
@@ -26,8 +26,10 @@ requirements:
     - anyio >=3.6.2
     - attrs >=22.1.0
     - cattrs >=22.2.0
+    - graphql-core >=3.2.3
     - gql >=3.4.0
     - httpx >=0.23.1
+    - rich >=12.6.0
     - typer >=0.6.1
     - beartype >=0.11.0
     - platformdirs >=2.6.2
