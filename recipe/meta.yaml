@@ -13,8 +13,6 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  entry_points:
-    - dagger-py = dagger.cli:app
 
 requirements:
   host:
