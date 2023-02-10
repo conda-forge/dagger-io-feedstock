@@ -1,5 +1,5 @@
 {% set name = "dagger-io" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
-  sha256: b06cea351128ccd0c89df51f5d72eb155a092460ff6aaabf8d970d9587cfb8ba
+  sha256: 990efc970069e7a3ae1b2298502c67b3d49dc4e6faf1946ed9dfcb72a2985dd9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  entry_points:
-    - dagger-py = dagger.cli:app
 
 requirements:
   host:
@@ -45,6 +43,9 @@ test:
 about:
   home: https://dagger.io
   summary: A client package for running Dagger pipelines in Python.
+  description: |
+    The Dagger Python SDK contains everything you need to develop CI/CD 
+    pipelines in Python, and run them on any OCI-compatible container runtime.
   license: Apache-2.0
   license_file: LICENSE
   doc_url: https://docs.dagger.io/sdk/python
