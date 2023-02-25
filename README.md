@@ -1,17 +1,21 @@
-About dagger-io
-===============
+About dagger-io-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dagger-io-feedstock/blob/main/LICENSE.txt)
 
 Home: https://dagger.io
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dagger-io-feedstock/blob/main/LICENSE.txt)
 
 Summary: A client package for running Dagger pipelines in Python.
 
 Development: https://github.com/dagger/dagger/tree/main/sdk/python
 
 Documentation: https://docs.dagger.io/sdk/python
+
+The Dagger Python SDK contains everything you need to develop CI/CD
+pipelines in Python, and run them on any OCI-compatible container runtime.
+
 
 Current build status
 ====================
