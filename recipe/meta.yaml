@@ -29,6 +29,7 @@ requirements:
     - httpx >=0.23.1
     - rich >=12.6.0
     - typer >=0.6.1
+    - typing_extensions >=4.4.0
     - beartype >=0.11.0
     - platformdirs >=2.6.2
 
@@ -44,7 +45,7 @@ about:
   home: https://dagger.io
   summary: A client package for running Dagger pipelines in Python.
   description: |
-    The Dagger Python SDK contains everything you need to develop CI/CD 
+    The Dagger Python SDK contains everything you need to develop CI/CD
     pipelines in Python, and run them on any OCI-compatible container runtime.
   license: Apache-2.0
   license_file: LICENSE
