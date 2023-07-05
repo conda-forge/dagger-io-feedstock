@@ -22,16 +22,15 @@ requirements:
   run:
     - python >=3.10,<4.0
     - anyio >=3.6.2
-    - attrs >=22.1.0
     - cattrs >=22.2.0
     - graphql-core >=3.2.3
     - gql >=3.4.0
     - httpx >=0.23.1
-    - rich >=12.6.0
     - typer >=0.6.1
     - typing_extensions >=4.4.0
     - beartype >=0.11.0
     - platformdirs >=2.6.2
+    - strawberry-graphql >=0.187.0
 
 test:
   imports:
