@@ -19,6 +19,7 @@ requirements:
     - python >=3.10,<4.0
     - pip
     - hatchling
+    - hatch-vcs
   run:
     - python >=3.10,<4.0
     - anyio >=3.6.2
