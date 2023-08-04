@@ -11,8 +11,7 @@ source:
 
 build:
   noarch: python
-  # fixing src because there's an issue with the sdist build in this version
-  script: mkdir src && mv dagger src && {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
