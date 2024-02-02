@@ -25,7 +25,7 @@ requirements:
     - anyio >=3.6.2
     - cattrs >=22.2.0
     - graphql-core >=3.2.3
-    - gql >=3.4.0
+    - gql >=3.5.0
     - httpx >=0.23.1
     - typing_extensions >=4.8.0
     - beartype >=0.11.0
