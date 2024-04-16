@@ -24,13 +24,14 @@ requirements:
     - python >=3.10,<4.0
     - anyio >=3.6.2
     - cattrs >=22.2.0
-    - graphql-core >=3.2.3
     - gql >=3.5.0
     - httpx >=0.23.1
-    - typing_extensions >=4.8.0
     - beartype >=0.18.2
     - platformdirs >=2.6.2
+    - typing_extensions >=4.8.0
     - rich >=12.6.0
+    - opentelemetry-sdk >=1.23.0
+    - opentelemetry-exporter-otlp-proto-grpc>=1.23.0
 
 test:
   imports:
