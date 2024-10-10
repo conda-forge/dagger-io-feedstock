@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vvv
   number: 0
 
 requirements:
   host:
-    - python >=3.10,<4.0
+    - python >=3.10,<3.13
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.10,<4.0
+    - python >=3.10,<3.13
     - anyio >=3.6.2
     - cattrs >=22.2.0
     - gql >=3.5.0
