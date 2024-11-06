@@ -1,5 +1,5 @@
 {% set name = "dagger-io" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
-  sha256: 117ed5f517b12e1e0a4f1a7034576007617652200fb159301c1ed2a6ff9edd75
+  sha256: f6510c5c1025135220357ccfae91c8229fecf4c3a9c32e78643c4bb93dd0a473
 
 build:
   noarch: python
