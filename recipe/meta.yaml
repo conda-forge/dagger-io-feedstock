@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "dagger-io" %}
 {% set version = "0.13.0" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
   sha256: 117ed5f517b12e1e0a4f1a7034576007617652200fb159301c1ed2a6ff9edd75
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10,<4.0
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.10,<4.0
+    - python >={{ python_min }},<4.0
     - anyio >=3.6.2
     - cattrs >=22.2.0
     - gql >=3.5.0
@@ -40,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://dagger.io
