@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "dagger-io" %}
-{% set version = "0.13.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dagger_io-{{ version }}.tar.gz
-  sha256: 117ed5f517b12e1e0a4f1a7034576007617652200fb159301c1ed2a6ff9edd75
+  sha256: 2d3fcbde3d389480ce7c487b0b10bf747b931f3deac5b0b434ccd575600eccbd
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
